@@ -9,5 +9,4 @@ public class AchouPlataformaApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(AchouPlataformaApplication.class, args);
 	}
-
 }
