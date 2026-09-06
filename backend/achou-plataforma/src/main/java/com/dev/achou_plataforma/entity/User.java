@@ -2,6 +2,7 @@ package com.dev.achou_plataforma.entity;
 
 import com.dev.achou_plataforma.entity.enums.Role;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Email;
 import lombok.*;
 
 import java.time.LocalDateTime;
@@ -25,9 +26,10 @@ public class User {
     private String name;
 
     @Column(nullable = false, length = 150, unique = true)
+    @Email
     private String email;
 
-    @Column(nullable = false, length = 255)
+    @Column(nullable = false)
     private String password_hash;
 
     @Column(nullable = false, length = 100)
