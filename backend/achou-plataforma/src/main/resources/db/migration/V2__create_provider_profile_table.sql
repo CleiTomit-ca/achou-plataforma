@@ -1,4 +1,4 @@
-CREATE TABLE provider_profile(
+CREATE TABLE provider_profile (
     id UUID PRIMARY KEY,
     user_id UUID PRIMARY KEY,
     bio TEXT NOT NULL,
